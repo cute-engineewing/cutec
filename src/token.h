@@ -1,7 +1,7 @@
 #ifndef _CUTEC_TOKEN_H
 #define _CUTEC_TOKEN_H
 
-#include "source.h"
+#include "unit.h"
 #include "vec.h"
 
 enum token_type
@@ -43,7 +43,6 @@ enum token_type
 struct token
 {
 	enum token_type type;
-	struct source_location location;
 
 	const char *buffer;
 	size_t length;
